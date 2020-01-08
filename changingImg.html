@@ -1,0 +1,15 @@
+<html>
+    <head></head>
+    <body>
+        <img src="mirror.jfif" id="demo">   
+        <button onclick="fn();">Next</button>
+    </body>    
+    <script>
+       function fn()
+       {
+               var math=Math.floor(Math.random()*4);
+               var img=["ocean.jfif","park.jfif","tree1.jfif","waterfall.jfif"];
+               var c=img[math];
+               document.getElementById("demo").setAttribute("src",c);
+       }
+     </script>
